@@ -196,6 +196,7 @@ private fun ContaItem(conta: Conta, onContaPressed: (Conta) -> Unit) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Icon(
+                    //condicioinal para selecionar o tipo do icone
                     imageVector = if (conta.paga) {
                         if (conta.tipo == TipoContaEnum.RECEITA) {
                             Icons.Filled.ThumbUp
